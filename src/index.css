@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: grid;
+  place-content: center;
+}
+label {
+  letter-spacing: 4px;
+
+  padding-right: 0.5em;
+}
+header {
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+}
+main {
+  min-height: 85vh;
+
+  font-size: 28px;
+}
+footer {
+  display: grid;
+  place-content: center;
+  border: 1px solid #000;
+  background-color: blue;
+  color: #fff;
+}
+
+.item > svg {
+  font-size: 30px;
+}
+.item > svg :hover {
+  color: red;
+}
+ul {
+  width: 25rem;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem;
+}
+
+ul li::before {
+  content: '\200B';
+}
+
+.item {
+  display: flex;
+
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #cdd4fb;
+}
+
+.item input[type='checkbox'] {
+  text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width: 48px;
+  height: 2.5rem;
+  height: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.item > label {
+  flex-grow: 1;
+}
+form {
+  display: flex;
+  padding-top: 2em;
+}
+input#addItem {
+  border: none;
+  border-bottom: 1px solid #000;
+  outline-color: transparent;
+  width: 20rem;
+}
+#add_it {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+#add_it :hover {
+  scale: 1;
+  color: rgb(42, 104, 218);
+}
+
+input#searchItem {
+  border: none;
+  border-bottom: 1px solid #000;
+  outline-color: transparent;
+  width: 20rem;
+}
